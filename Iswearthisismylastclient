@@ -3,7 +3,7 @@
     local client = {}
     client.networksend = function(...) RemoteEvent:FireServer(...) end
     client.network = require(ReplicatedFirst.ClientModules.Old.framework.network);
-    client.networkfuncs = debug.getupvalue(client.network.ready, 4)
+
 	client.physics = require(ReplicatedFirst.SharedModules.Old.Utilities.Math.physics:Clone())
     client.quotes = require(ReplicatedFirst.SharedModules.SharedConfigs.Quotes)
     client.particle = require(ReplicatedFirst.ClientModules.Old.framework.particle);

@@ -2,7 +2,7 @@
 
 
 local Client = {}
-            Client.PFCam = require(game.ReplicatedFirst.ClientModules.Old.framework.camera);
+  
 for I,V in pairs(getgc(true)) do
     if type(V) == "table" then
         if rawget(V, "isplayeralive") then

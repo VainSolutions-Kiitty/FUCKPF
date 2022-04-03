@@ -33,6 +33,8 @@ for m, n in pairs(getgc(true)) do
             client.sound = n
         elseif rawget(n, "raycastwhitelist") then
             client.roundsystem = n
+                    elseif rawget(n, "raycast") and rawget(n, "raycastSingleExit") then
+            client.raycast = n
         end
     end
 end
